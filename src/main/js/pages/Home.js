@@ -1,6 +1,8 @@
+import Main from '../components/Main'
+
 const Home = () =>
   <div>
-    home
+    <Main />
   </div>
 
 export default Home
