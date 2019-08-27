@@ -9,22 +9,12 @@ const Package = ({props}) =>
         <Block5 time={((props - 8400 )  / 10)} src='/img/package/block03.png' />
         <Letter time={((props - 8500 )  / 10)} src='/img/package/package.png' />
         <Shadow time={((props - 8500 )  / 10)} src='/img/package/shadow.png' />
-        <Block time={((props - 9500 )  / 10)} />
     </div>
 
 export default Package
 
-const Block = styled.div`
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #333366;
-    z-index: 2;
-    top: ${props=> props.time - 100}%;
-    ${props => (props.time < 10) && `
-        display: none
-    `}
-`
+
+
 
 
 const Letter = styled.img`
@@ -47,6 +37,26 @@ const Letter = styled.img`
         `}
 
     }
+    ${props => (props.time > 120) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 125) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 130) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 135) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 140) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 145) && `
+        display: none;
+    `}
+
+
 
 `
 const Shadow = styled.img`
@@ -63,6 +73,24 @@ const Shadow = styled.img`
         right: 20%;
 
     }
+    ${props => (props.time > 80) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 85) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 90) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 95) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 100) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 105) && `
+        display: none;
+    `}
 
 `
 
@@ -86,6 +114,24 @@ const Block1 = styled.img`
         top: 20%;
         `}
     }
+    ${props => (props.time > 80) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 85) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 90) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 95) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 100) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 105) && `
+        display: none;
+    `}
 
 `
 const Block2 = styled.img`
@@ -108,6 +154,24 @@ const Block2 = styled.img`
         top: 30%;
         `}
     }
+    ${props => (props.time > 80) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 85) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 90) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 95) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 100) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 105) && `
+        display: none;
+    `}
 `
 const Block3 = styled.img`
     position: fixed;
@@ -130,6 +194,24 @@ const Block3 = styled.img`
         top: 15%;
         `}
     }
+    ${props => (props.time > 80) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 85) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 90) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 95) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 100) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 105) && `
+        display: none;
+    `}
 
 `
 const Block4 = styled.img`
@@ -152,6 +234,24 @@ const Block4 = styled.img`
         top: 25%;
         `}
     }
+    ${props => (props.time > 80) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 85) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 90) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 95) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 100) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 105) && `
+        display: none;
+    `}
 
 `
 const Block5 = styled.img`
@@ -174,5 +274,23 @@ const Block5 = styled.img`
         top: 30%;
         `}
     }
+    ${props => (props.time > 80) && `
+        opacity: 0.9;
+    `}
+    ${props => (props.time > 85) && `
+        opacity: 0.7;
+    `}
+    ${props => (props.time > 90) && `
+        opacity: 0.5;
+    `}
+    ${props => (props.time > 95) && `
+        opacity: 0.3;
+    `}
+    ${props => (props.time > 100) && `
+        opacity: 0.1;
+    `}
+    ${props => (props.time > 105) && `
+        display: none;
+    `}
 
 `

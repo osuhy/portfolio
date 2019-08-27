@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import InitalLetter from './InitalLetter'
 import Typograph from './Typograph'
 import Package from './Package'
-
+import Skill from './Skill'
+import Contact from './Contact'
 
 class Main extends Component {
 
@@ -29,6 +30,8 @@ class Main extends Component {
                     {this.state.scrollTop < 3500 && <InitalLetter props={this.state.scrollTop} /> }
                     {this.state.scrollTop < 7500 && <Typograph props={this.state.scrollTop} /> }
                     {this.state.scrollTop < 10500 && <Package props={this.state.scrollTop} /> }
+                    {this.state.scrollTop < 17000 && <Skill props={this.state.scrollTop} /> }
+                    <Contact props={this.state.scrollTop} />
             </Container>
 
         )
@@ -42,7 +45,7 @@ const Container = styled.div`
     background: #333366;
     position: absolute;
     width: 100%;
-    height: 15000px;
+    height: 17500px;
     top:0%;
     left:0%;
 `
